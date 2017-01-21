@@ -11,6 +11,6 @@ public class Owner : MonoBehaviour {
 		stickScript = stick.GetComponent <Stick> ();
 		animator = GetComponent <Animator> ();
 
-
+		animator.SetTrigger ("Throw");
 	}
 }
