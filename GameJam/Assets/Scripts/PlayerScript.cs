@@ -4,7 +4,6 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerScript : MonoBehaviour {
 	public float speed;
-	public float rotationSize;
 
 	private CharacterController controller;
 	private Vector3 moveDirection = Vector3.zero;
@@ -25,9 +24,10 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	void Move (float x, float z) {
-		moveDirection = new Vector3 (x, 0, z);
+		moveDirection = new Vector3 (x, 0, -5*z);
 		moveDirection = transform.TransformDirection (moveDirection);
 		moveDirection *= speed;
+		moveDirection.z = 0;
 		controller.Move (moveDirection * Time.deltaTime);
 	}	
 
@@ -46,5 +46,15 @@ public class PlayerScript : MonoBehaviour {
 	void Animating (float x, float z) {
 		bool forwards = (z > 0f);
 		anim.SetBool ("Forwards", forwards);
+	}
+=======
+
+	void OnTriggerEnter (Collider other) {
+		if (other.gameObject.CompareTag ("Collectable")) {
+			Debug.Log ("Yum");
+			Destroy (other.gameObject);
+		} else {
+			Debug.Log ("Yuck");
+		}
 	}
 }
