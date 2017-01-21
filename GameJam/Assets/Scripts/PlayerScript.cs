@@ -56,4 +56,8 @@ public class PlayerScript : MonoBehaviour {
 			Debug.Log ("Yuck");
 		}
 	}
+
+	void OnControllerColliderHit () {
+		Debug.Log ("Hi");
+	}
 }

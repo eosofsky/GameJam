@@ -498,7 +498,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  rotationSize: 0
 --- !u!143 &993492860
 CharacterController:
   m_ObjectHideFlags: 0
@@ -749,7 +748,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  rotationSize: 0
 --- !u!143 &1185638876
 CharacterController:
   m_ObjectHideFlags: 0
@@ -927,6 +925,7 @@ GameObject:
   - 4: {fileID: 2064828548}
   - 212: {fileID: 2064828547}
   - 95: {fileID: 2064828546}
+  - 143: {fileID: 2064828549}
   m_Layer: 0
   m_Name: Owner
   m_TagString: Untagged
@@ -989,3 +988,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!143 &2064828549
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2064828545}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: .5
+  m_SlopeLimit: 45
+  m_StepOffset: .300000012
+  m_SkinWidth: .0799999982
+  m_MinMoveDistance: .00100000005
+  m_Center: {x: 0, y: 0, z: 0}
