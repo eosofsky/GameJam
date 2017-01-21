@@ -24,11 +24,14 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	void Move (float x, float z) {
-		moveDirection = new Vector3 (x, 0, z);
+		moveDirection = new Vector3 (x, 0.0f, z);
 		//moveDirection = transform.TransformDirection (moveDirection);
 		moveDirection *= speed;
-		//moveDirection.z = 0;
+		//moveDirection.y = 0.0f;
 		controller.Move (moveDirection * Time.deltaTime);
+		Vector3 pos = transform.position;
+		pos.y = 0.0f;
+		transform.position = pos;
 	}	
 
 	void Rotate (float x, float z) {
@@ -49,7 +52,7 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider other) {
-		if (other.gameObject.CompareTag ("Collectable")) {
+		if (other.gameObject.CompareTag ("Stick")) {
 			Debug.Log ("Yum");
 			Destroy (other.gameObject);
 		} else {
