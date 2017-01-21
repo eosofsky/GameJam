@@ -19,9 +19,9 @@ public class PlayerScript : MonoBehaviour {
 		float x = Input.GetAxis ("Horizontal");
 		float z = Input.GetAxis ("Vertical");
 
+		Animating (x,z);
 		Move (x,z);
 		Rotate (x,z);
-		Animating (x,z);
 	}
 
 	void Move (float x, float z) {
@@ -46,5 +46,12 @@ public class PlayerScript : MonoBehaviour {
 	void Animating (float x, float z) {
 		bool forwards = (z > 0f);
 		anim.SetBool ("Forwards", forwards);
+	}
+
+	void OnTriggerEnter (Collider other) {
+		if (other.gameObject.CompareTag ("Collectable")) {
+			Debug.Log ("Yum");
+			Destroy (other.gameObject);
+		}
 	}
 }
