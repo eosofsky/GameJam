@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: fb7cfa47700de46ed9384a76e59cc746
+timeCreated: 1485030705
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: owner_throw_spritesheet_1
+    21300002: owner_throw_spritesheet_2
+    21300004: owner_throw_spritesheet_3
+    21300006: owner_throw_spritesheet_4
+    21300008: owner_throw_spritesheet_5
+    21300010: owner_throw_spritesheet_6
+    21300012: owner_throw_spritesheet_7
+    21300014: owner_throw_spritesheet_8
+    21300016: owner_throw_spritesheet_10
+    21300018: owner_throw_spritesheet_12
+    21300020: owner_throw_spritesheet_14
+    21300022: owner_throw_spritesheet_15
+    21300024: owner_throw_spritesheet_28
+    21300026: owner_throw_spritesheet_34
+    21300028: owner_throw_spritesheet_35
+    21300030: owner_throw_spritesheet_36
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: owner_throw_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 55
+        width: 480
+        height: 735
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owner_throw_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 56
+        width: 481
+        height: 735
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owner_throw_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 56
+        width: 481
+        height: 734
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owner_throw_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2017
+        y: 58
+        width: 483
+        height: 732
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owner_throw_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2501
+        y: 54
+        width: 476
+        height: 734
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owner_throw_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2979
+        y: 56
+        width: 481
+        height: 732
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owner_throw_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 3460
+        y: 55
+        width: 477
+        height: 733
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owner_throw_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 3939
+        y: 55
+        width: 478
+        height: 734
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owner_throw_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 58
+        width: 478
+        height: 730
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owner_throw_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 438
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owner_throw_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 41
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owner_throw_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 41
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: owner_throw_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 41
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
