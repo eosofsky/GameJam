@@ -24,10 +24,10 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	void Move (float x, float z) {
-		moveDirection = new Vector3 (x, 0, -5*z);
+		moveDirection = new Vector3 (x, z, 0);
 		moveDirection = transform.TransformDirection (moveDirection);
 		moveDirection *= speed;
-		moveDirection.z = 0;
+		moveDirection.y = 0;
 		controller.Move (moveDirection * Time.deltaTime);
 	}	
 
