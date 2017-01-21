@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 452090}
   - 212: {fileID: 21252476}
   - 95: {fileID: 9529108}
-  - 143: {fileID: 14391086}
-  - 114: {fileID: 11462788}
+  - 143: {fileID: 14390256}
+  - 114: {fileID: 11487770}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Untagged
@@ -48,7 +48,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11462788
+--- !u!114 &11487770
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -60,8 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  rotationSize: 20
---- !u!143 &14391086
+--- !u!143 &14390256
 CharacterController:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
