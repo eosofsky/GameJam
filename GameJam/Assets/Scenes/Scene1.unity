@@ -102,8 +102,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: .769999981
-  m_Pitch: 1
+  m_Volume: .49000001
+  m_Pitch: .910000026
   Loop: 0
   Mute: 0
   Priority: 128
@@ -280,6 +280,10 @@ Prefab:
       propertyPath: dogWalk
       value: 
       objectReference: {fileID: 8300000, guid: 6699f1eac6b03cd4fb816473d91bc90a, type: 3}
+    - target: {fileID: 11487770, guid: 6090db12c103c43d0872f8689a482e4d, type: 2}
+      propertyPath: dogSqueal
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ca66b46fb9f0704695a1ceeb543afc4, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6090db12c103c43d0872f8689a482e4d, type: 2}
   m_IsPrefabParent: 0
@@ -448,7 +452,7 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 165612, guid: f49fa40a80ece5d45917c289311f8370, type: 2}
   m_PrefabInternal: {fileID: 2141246873}
---- !u!82 &644813858
+--- !u!82 &644813859
 AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -457,73 +461,33 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 24c551bfed744b54999dfb6fcd0d2e47, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
-  Priority: 128
+  Priority: 16
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 2
+  rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: .00200000009
-      value: .799303949
-      inSlope: -500.200653
-      outSlope: -500.200653
-      tangentMode: 0
-    - time: .0189289618
-      value: .841950953
-      inSlope: -6.48705196
-      outSlope: -6.48705196
-      tangentMode: 0
-    - time: .0858579278
-      value: .663642228
-      inSlope: -.4884772
-      outSlope: -.4884772
-      tangentMode: 0
-    - time: .193573773
-      value: .550958395
-      inSlope: -.1221193
-      outSlope: -.1221193
-      tangentMode: 0
-    - time: .3161093
-      value: .526969433
-      inSlope: -.030529825
-      outSlope: -.030529825
-      tangentMode: 0
-    - time: .387191236
-      value: .468421638
-      inSlope: -1.9539088
-      outSlope: -1.9539088
-      tangentMode: 0
-    - time: .488173604
-      value: .175588936
-      inSlope: -7.8156352
-      outSlope: -7.8156352
-      tangentMode: 0
-    - time: .512000024
-      value: .114980698
-      inSlope: -.00763245625
-      outSlope: -.00763245625
-      tangentMode: 0
-    - time: .883781374
-      value: .114980698
-      inSlope: -1.59472024
-      outSlope: -1.59472024
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
     - time: 1
-      value: .114980698
-      inSlope: -.00200080103
-      outSlope: -.00200080103
+      value: 0
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1321,6 +1285,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11440800, guid: ad6d04cd4270e4796b52053bb4ad37f8, type: 2}
+      propertyPath: ownerThrow
+      value: 
+      objectReference: {fileID: 8300000, guid: 2e79ffa4e01063e4a80751c89b72f53e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad6d04cd4270e4796b52053bb4ad37f8, type: 2}
   m_IsPrefabParent: 0
@@ -1502,6 +1470,10 @@ Prefab:
       propertyPath: m_Name
       value: WaveOne
       objectReference: {fileID: 0}
+    - target: {fileID: 11418234, guid: f49fa40a80ece5d45917c289311f8370, type: 2}
+      propertyPath: dogSqueal
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ca66b46fb9f0704695a1ceeb543afc4, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f49fa40a80ece5d45917c289311f8370, type: 2}
   m_IsPrefabParent: 0

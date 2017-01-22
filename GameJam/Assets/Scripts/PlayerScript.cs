@@ -70,7 +70,6 @@ public class PlayerScript : MonoBehaviour {
 	void OnTriggerEnter (Collider other) {
 		if (other.gameObject.CompareTag ("Stick")) {
 			//Debug.Log ("Yum");
-			//Destroy (other.gameObject);
 			hasStick = true;
 			numSticks++;
 		} else {
