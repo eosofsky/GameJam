@@ -9,7 +9,6 @@ public class Owner : MonoBehaviour {
 
 	AudioSource throwAS;
 
-
 	void Start () {
 		stick = GameObject.FindGameObjectWithTag ("Stick");
 		stickScript = stick.GetComponent <Stick> ();
@@ -17,12 +16,6 @@ public class Owner : MonoBehaviour {
 		throwAS = GetComponent<AudioSource> ();
 		Throw ();
 	}
-
-	//void Update () {
-	//	if (Input.GetButtonDown ("Jump")) {
-	//		Throw ();
-	//	}
-	//}
 
 	public void Throw () {
 		Vector3 pos = transform.position;

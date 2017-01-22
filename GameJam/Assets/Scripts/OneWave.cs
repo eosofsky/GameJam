@@ -13,5 +13,6 @@ public class OneWave : MonoBehaviour {
 		float dissapear = (float)-30;
 		squealAS.PlayOneShot(dogSqueal);
 		GameObject.Find ("Dog").transform.Translate (dissapear, dissapear, dissapear);
+		Application.LoadLevel ("End");
 	}
 }
