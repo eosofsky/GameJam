@@ -5,35 +5,35 @@ public class Ebb_Flow : MonoBehaviour {
 	bool isNewWave = true;
 	float startPoint = (float) 0.0;
 	float translation = (float) 0.0;
-	float delta = (float) 0.1;
+	float delta = (float) 0.0;
 
 	static float getRandomNumber() {
-		return (float) (Random.Range (20, 50) / 10.0);
+		return (float) (Random.Range (5, 20) / 10.0);
 	}
 
 	void Update() {
 		if (isNewWave) {
 			startPoint = GameObject.Find("WaveOne").transform.position.z;
+			// Should get flatter as the wave bears down
+			delta = (float) -0.03;
 			translation = getRandomNumber();
 			isNewWave = false;
 		}
-		float currentPoint = transform.position.z;
-		float distanceTraveled = currentPoint-startPoint;
+		float currentPoint = GameObject.Find("WaveOne").transform.position.z;
+		float distanceTraveled = startPoint - currentPoint;
 
-		Debug.Log(string.Format("Target: {3}, CurrentPoint: {0}, Traveled:{1}, StartPoint:{2}",currentPoint, distanceTraveled, startPoint, translation));
-
-		Debug.Log ("Before Condition");
-		if (currentPoint < translation || currentPoint > startPoint) {
-			if (currentPoint > startPoint) {
+		if (distanceTraveled > translation || distanceTraveled < 0) {
+			if (distanceTraveled < 0) {
 				isNewWave = true;
 			}
 			// Move backwards until collide with other wave, then go to the very back
 			delta = delta * (-1);
-			transform.Translate (0, 0, delta);
+			GameObject.Find("WaveOne").transform.Translate (0, delta, 0);
+			GameObject.Find("Ocean").transform.Translate (0, 0, delta);
+			Debug.Log ("Let's move the other way!");
 		} else {
-			Debug.Log (string.Format ("Let's move {0} units forward!", delta));
-			transform.Translate (0, 0, delta);
+			GameObject.Find("Ocean").transform.Translate (0, 0, delta);
+			GameObject.Find("WaveOne").transform.Translate (0, delta, 0);
 		}
-		Debug.Log ("After Condition");
 	}
 }
