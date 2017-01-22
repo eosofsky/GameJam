@@ -6,6 +6,7 @@ public class PlayerScript : MonoBehaviour {
 	public float speed;
 	public bool hasStick;
 	public AudioClip dogWalk;
+	public int numSticks;
 
 	private CharacterController controller;
 	private Vector3 moveDirection = Vector3.zero;
@@ -17,6 +18,7 @@ public class PlayerScript : MonoBehaviour {
 		controller = GetComponent<CharacterController> ();
 		anim = GetComponent<Animator> ();
 		playerAS = GetComponent<AudioSource> ();
+		numSticks = 0;
 	}
 
 	void Update () {
@@ -32,7 +34,6 @@ public class PlayerScript : MonoBehaviour {
 			playerAS.PlayOneShot(dogWalk);
 		} else {
 			playerAS.Pause();
-			
 		}
 	}
 
@@ -71,6 +72,7 @@ public class PlayerScript : MonoBehaviour {
 			//Debug.Log ("Yum");
 			//Destroy (other.gameObject);
 			hasStick = true;
+			numSticks++;
 		} else {
 			Debug.Log ("Yuck");
 		}

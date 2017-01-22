@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Stick
   - Owner
+  - Counter
   layers:
   - Default
   - TransparentFX
