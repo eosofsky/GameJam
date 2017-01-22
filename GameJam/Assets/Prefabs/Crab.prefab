@@ -11,7 +11,7 @@ GameObject:
   - 95: {fileID: 9585050}
   - 212: {fileID: 21271858}
   - 136: {fileID: 13695038}
-  - 114: {fileID: 11459600}
+  - 114: {fileID: 11436498}
   m_Layer: 0
   m_Name: Crab
   m_TagString: Untagged
@@ -48,7 +48,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11459600
+--- !u!114 &11436498
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -56,13 +56,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 173110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e757079c4c72149bc995ecaaa9da4ed6, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e5e7c883e6684152befb7e1f636468e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xMin: -10
   xMax: 10
   speed: .0500000007
-  goLeft: 0
+  goLeft: 1
 --- !u!136 &13695038
 CapsuleCollider:
   m_ObjectHideFlags: 1
