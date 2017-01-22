@@ -6,7 +6,7 @@ public class Crab : MonoBehaviour {
 	public float xMax;
 	public float speed;
 	public bool goLeft;
-
+	
 	void Update () {
 		if (goLeft) {
 			transform.position += Vector3.left * speed;
