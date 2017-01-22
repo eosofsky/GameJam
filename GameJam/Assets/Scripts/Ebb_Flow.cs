@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Ebb_Flow : MonoBehaviour {
+	float offset = (float) 5.1;
 	bool isNewWave = true;
 	float startPoint = (float) 0.0;
 	float translation = (float) 0.0;
@@ -13,10 +14,10 @@ public class Ebb_Flow : MonoBehaviour {
 
 	void Update() {
 		if (isNewWave) {
-			startPoint = GameObject.Find("WaveOne").transform.position.z;
+			startPoint = (float) 20.3;
 			// Should get flatter as the wave bears down
 			delta = (float) -0.03;
-			translation = getRandomNumber();
+			translation = getRandomNumber() + (startPoint - offset);
 			isNewWave = false;
 		}
 		float currentPoint = GameObject.Find("WaveOne").transform.position.z;
@@ -30,7 +31,6 @@ public class Ebb_Flow : MonoBehaviour {
 			delta = delta * (-1);
 			GameObject.Find("WaveOne").transform.Translate (0, delta, 0);
 			GameObject.Find("Ocean").transform.Translate (0, 0, delta);
-			//Debug.Log ("Let's move the other way!");
 		} else {
 			GameObject.Find("Ocean").transform.Translate (0, 0, delta);
 			GameObject.Find("WaveOne").transform.Translate (0, delta, 0);

@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: e3b6439393298f24c80811221b4668b3
+timeCreated: 1485043651
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: islet_water_spritesheet_0
+    21300002: islet_water_spritesheet_1
+    21300004: islet_water_spritesheet_2
+    21300006: islet_water_spritesheet_3
+    21300008: islet_water_spritesheet_4
+    21300010: islet_water_spritesheet_5
+    21300012: islet_water_spritesheet_6
+    21300014: islet_water_spritesheet_7
+    21300016: islet_water_spritesheet_8
+    21300018: islet_water_spritesheet_9
+    21300020: islet_water_spritesheet_10
+    21300022: islet_water_spritesheet_11
+    21300024: islet_water_spritesheet_12
+    21300026: islet_water_spritesheet_13
+    21300028: islet_water_spritesheet_14
+    21300030: islet_water_spritesheet_15
+    21300032: islet_water_spritesheet_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: islet_water_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1132
+        width: 585
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1096
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 881
+        width: 580
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 911
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 876
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 870
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 850
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 625
+        width: 590
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 609
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 599
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 384
+        width: 580
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 414
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 379
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 373
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 353
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 153
+        width: 585
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: islet_water_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 117
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
