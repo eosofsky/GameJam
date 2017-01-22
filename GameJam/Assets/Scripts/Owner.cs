@@ -6,6 +6,7 @@ public class Owner : MonoBehaviour {
 	Stick stickScript;
 	Animator animator;
 
+
 	void Start () {
 		stick = GameObject.FindGameObjectWithTag ("Stick");
 		stickScript = stick.GetComponent <Stick> ();
@@ -20,7 +21,7 @@ public class Owner : MonoBehaviour {
 	//}
 
 	public void Throw () {
-		Debug.Log ("throwing");
+		//Debug.Log ("throwing");
 		Vector3 pos = transform.position;
 		pos.z += 2.36f;
 		stick.transform.position = pos;

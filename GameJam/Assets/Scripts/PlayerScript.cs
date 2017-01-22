@@ -5,14 +5,18 @@ using System.Collections;
 public class PlayerScript : MonoBehaviour {
 	public float speed;
 	public bool hasStick;
+	public AudioClip dogWalk;
 
 	private CharacterController controller;
 	private Vector3 moveDirection = Vector3.zero;
 	private Animator anim;
 
+	AudioSource playerAS;
+
 	void Start () {
 		controller = GetComponent<CharacterController> ();
 		anim = GetComponent<Animator> ();
+		playerAS = GetComponent<AudioSource> ();
 	}
 
 	void Update () {
@@ -22,6 +26,14 @@ public class PlayerScript : MonoBehaviour {
 		Animating (x,z);
 		Move (x,z);
 		Rotate (x,z);
+
+		if(Input.GetButton("Horizontal") || Input.GetButton("Vertical")) 
+		{
+			playerAS.PlayOneShot(dogWalk);
+		} else {
+			playerAS.Pause();
+			
+		}
 	}
 
 	void Move (float x, float z) {
@@ -56,7 +68,7 @@ public class PlayerScript : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other) {
 		if (other.gameObject.CompareTag ("Stick")) {
-			Debug.Log ("Yum");
+			//Debug.Log ("Yum");
 			//Destroy (other.gameObject);
 			hasStick = true;
 		} //else {

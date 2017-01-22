@@ -30,7 +30,7 @@ public class Ebb_Flow : MonoBehaviour {
 			delta = delta * (-1);
 			GameObject.Find("WaveOne").transform.Translate (0, delta, 0);
 			GameObject.Find("Ocean").transform.Translate (0, 0, delta);
-			Debug.Log ("Let's move the other way!");
+			//Debug.Log ("Let's move the other way!");
 		} else {
 			GameObject.Find("Ocean").transform.Translate (0, 0, delta);
 			GameObject.Find("WaveOne").transform.Translate (0, delta, 0);

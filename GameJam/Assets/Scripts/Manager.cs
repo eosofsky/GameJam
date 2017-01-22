@@ -8,8 +8,12 @@ public class Manager : MonoBehaviour {
 	GameObject player;
 	PlayerScript playerScript;
 
+	public AudioClip stickCollect;
+	AudioSource stickAS;
+
 	// Use this for initialization
 	void Start () {
+		stickAS = GetComponent<AudioSource> ();
 		owner = GameObject.FindGameObjectWithTag ("Owner");
 		ownerScript = owner.GetComponent <Owner> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
@@ -20,7 +24,12 @@ public class Manager : MonoBehaviour {
 	void Update () {
 		if (playerScript.hasStick) {
 			playerScript.hasStick = false;
-			ownerScript.Throw ();
+			stickAS.PlayOneShot (stickCollect);
+			StartCoroutine ("waitHalfSeconds");
 		}
 	}
-}
+	IEnumerator waitHalfSeconds() {
+		yield return new WaitForSeconds (0.5f);
+		ownerScript.Throw ();
+		}
+	}
