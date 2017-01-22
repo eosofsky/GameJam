@@ -20,7 +20,6 @@ public class Owner : MonoBehaviour {
 	//}
 
 	public void Throw () {
-		Debug.Log ("throwing");
 		Vector3 pos = transform.position;
 		pos.z += 2.36f;
 		stick.transform.position = pos;

@@ -59,9 +59,9 @@ public class PlayerScript : MonoBehaviour {
 			Debug.Log ("Yum");
 			//Destroy (other.gameObject);
 			hasStick = true;
-		} //else {
-			//Debug.Log ("Yuck");
-		//}
+		} else {
+			Debug.Log ("Yuck");
+		}
 	}
 
 	void OnControllerColliderHit () {
