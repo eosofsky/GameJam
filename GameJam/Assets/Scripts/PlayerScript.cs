@@ -47,8 +47,10 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	void Animating (float x, float z) {
-		bool forwards = (z > 0f);
-		anim.SetBool ("Forwards", forwards);
+		anim.SetBool ("Forwards", (z > 0.0f));
+		anim.SetBool ("Backwards", (z < 0.0f));
+		anim.SetBool ("Left", (x < 0.0f));
+		anim.SetBool ("Right", (x > 0.0f));
 	}
 
 	void OnTriggerEnter (Collider other) {

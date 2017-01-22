@@ -19,7 +19,7 @@ public class Stick : MonoBehaviour {
 	void Update () {
 		if (isFlying) {
 			transform.position = Vector3.Lerp (transform.position, target.position, speed);
-			if (gameObject.transform.position.z >= 6) {
+			if (gameObject.transform.position.z >= zMin) {
 				isFlying = false;
 				Land();
 			}
@@ -33,6 +33,5 @@ public class Stick : MonoBehaviour {
 		float x = Random.value * width + xMin;
 		float z = Random.value * height + zMin;
 		transform.position = new Vector3 (x, 0, z);
-		gameObject.SetActive (true);
 	}
 }
