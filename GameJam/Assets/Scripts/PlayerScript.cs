@@ -4,6 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerScript : MonoBehaviour {
 	public float speed;
+	public bool hasStick;
 
 	private CharacterController controller;
 	private Vector3 moveDirection = Vector3.zero;
@@ -56,10 +57,11 @@ public class PlayerScript : MonoBehaviour {
 	void OnTriggerEnter (Collider other) {
 		if (other.gameObject.CompareTag ("Stick")) {
 			Debug.Log ("Yum");
-			Destroy (other.gameObject);
-		} else {
-			Debug.Log ("Yuck");
-		}
+			//Destroy (other.gameObject);
+			hasStick = true;
+		} //else {
+			//Debug.Log ("Yuck");
+		//}
 	}
 
 	void OnControllerColliderHit () {
