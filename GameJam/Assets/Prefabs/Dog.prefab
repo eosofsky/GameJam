@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11487770}
   m_Layer: 0
   m_Name: Dog
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  isDead: 0
 --- !u!143 &14390256
 CharacterController:
   m_ObjectHideFlags: 1

@@ -10,15 +10,16 @@ public class Owner : MonoBehaviour {
 		stick = GameObject.FindGameObjectWithTag ("Stick");
 		stickScript = stick.GetComponent <Stick> ();
 		animator = GetComponent <Animator> ();
+		Throw ();
 	}
 
-	void Update () {
-		if (Input.GetButtonDown ("Jump")) {
-			Throw ();
-		}
-	}
+	//void Update () {
+	//	if (Input.GetButtonDown ("Jump")) {
+	//		Throw ();
+	//	}
+	//}
 
-	void Throw () {
+	public void Throw () {
 		Vector3 pos = transform.position;
 		pos.z += 2.36f;
 		stick.transform.position = pos;

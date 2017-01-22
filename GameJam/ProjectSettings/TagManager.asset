@@ -5,8 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Stick
-  - Collectable
-  - Throw Boundary
+  - Owner
   layers:
   - Default
   - TransparentFX
